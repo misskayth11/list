@@ -15,7 +15,6 @@ form.addEventListener('submit',function(e){
 list.addEventListener('click',function(e){
     e.target.nodeName === 'LI' && e.target.remove();
 });
-
-btn2.addEventListener('click',function(){
-    console.log('clicked');
+btn2.addEventListener("click", function(e){
+    document.body.style.backgroundColor = "red";
 });
