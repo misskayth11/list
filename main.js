@@ -16,5 +16,13 @@ list.addEventListener('click',function(e){
     e.target.nodeName === 'LI' && e.target.remove();
 });
 btn2.addEventListener("click", function(e){
-    document.body.style.backgroundColor = "red";
+    const newColor=makeRandColor();
+    document.body.style.backgroundColor = newColor;
 });
+const makeRandColor=()=>{
+    const r=Math.floor(Math.random()*255);
+    const g=Math.floor(Math.random()*255);
+    const b=Math.floor(Math.random()*255);
+    return `rgb(${r},${g},${b})`;
+
+};
