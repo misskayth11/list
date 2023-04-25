@@ -1,31 +1,32 @@
-h1,h2{
-    text-align: center;
-    margin-bottom: 30px;
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.header{
-    text-align: left;
-    margin-left: 30px;
+.header {
+  text-align: left;
+  margin-left: 30px;
 }
-li{
-    font-size: 20px;
-    padding: 20px;
-}
-
-form{
-    margin-left:30px;
-    margin-top: 40px;
-}
-hr{
-    color:black;
+li {
+  font-size: 20px;
+  padding: 20px;
 }
 
-.change{
-    text-align: center;
+form {
+  margin-left: 30px;
+  margin-top: 40px;
 }
-nav{
-    text-align: right;
+hr {
+  color: black;
 }
-.navli{
-    list-style: none;
+
+.change {
+  text-align: center;
+}
+nav {
+  text-align: right;
+}
+ul {
+  list-style: none;
 }
