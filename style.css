@@ -25,5 +25,7 @@ hr{
 }
 nav{
     text-align: right;
+}
+.navli{
     list-style: none;
 }
