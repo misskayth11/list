@@ -11,6 +11,7 @@ li{
     font-size: 20px;
     padding: 20px;
 }
+
 form{
     margin-left:30px;
     margin-top: 40px;
@@ -24,4 +25,5 @@ hr{
 }
 nav{
     text-align: right;
+    list-style: none;
 }
