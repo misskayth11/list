@@ -18,11 +18,11 @@ list.addEventListener('click',function(e){
 btn2.addEventListener("click", function(e){
     const newColor=makeRandColor();
     document.body.style.backgroundColor = newColor;
+
 });
 const makeRandColor=()=>{
     const r=Math.floor(Math.random()*255);
     const g=Math.floor(Math.random()*255);
     const b=Math.floor(Math.random()*255);
     return `rgb(${r},${g},${b})`;
-
 };
