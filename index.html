@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <nav class="navbar">
       <ul>
         <!--You can't use <li> without <ul> or <ol>.-->
-          <li>
+          <li class="links">
             <a href="https://misskayth11.github.io/list/home/">HOME</a>
           </li>
-        <li>
+        <li class="links">
           <!--Dont add a class to remove the list style.-->
           <a href="https://misskayth11.github.io/list/new-list/">Next Page</a>
         </li>
       </ul>
     </nav>
-    <h1 id="top">リスト作ろう</h1>
-    <h2>今まで好きだった人リスト</h2>
-    <hr />
+    <div class="container">
+    
+    <h1>今まで好きだった人リスト</h1>
+    
 
     <form action="/lists.html" id="listform">
       <label for="personlist"><b>好きな人の名前入力してください</b></label>
@@ -40,5 +42,6 @@
     </div>
     <p id="btt"><a href="#top"><strong>Back to TOP</strong></a></p>
   </footer>
+</div>
   <script src="main.js"></script>
 </html>

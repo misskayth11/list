@@ -6,19 +6,25 @@ h1{
 }
 body{
     margin-left: 50px;
-    background-color: aquamarine;
+   background:linear-gradient(to right,rgb(111, 255, 214),rgb(119, 119, 251),rgb(236, 131, 131));
 }
 button:hover{
     color:rgb(134, 12, 249);
 }
 button{
     background-color: rgb(252, 180, 153);
+    width: 80px;
+    height: 30px;
+}
+input{
+    width:250px;
+    height:25px;
 }
 form{
     margin-top: 30px;
 }
 #form2{
-    margin-left: 65px;
+    margin-left: 80px;
     margin-bottom: 50px;
 }
 #form1{
@@ -27,11 +33,16 @@ form{
 #title{
     text-align: center;}
     
-ol{
-    margin-left: 550px;
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color:rgb(222, 74, 245);
 }
 li{
     margin-top: 35px;
+    text-shadow:1px 1px 2px rgb(255, 149, 92);
 }
 nav{
     font-size: 28px;
@@ -39,3 +50,11 @@ nav{
 #bttop{
     font-size: 30px;
 }
+.container{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 120%;
+  }
