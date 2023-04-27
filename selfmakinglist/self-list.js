@@ -15,4 +15,7 @@ form2.addEventListener('submit',function(e){
     const content=document.createElement('li');
     content.innerText=input2.value;
     list.append(content);
-})
+});
+list.addEventListener('click',function(e){
+    e.target.nodeName === 'LI' && e.target.remove();
+});
