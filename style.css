@@ -1,12 +1,20 @@
 
 li {
-  font-size: 20px;
+  font-size: 120%;
   padding: 20px;
 }
 
 form {
   margin-left: 30px;
   margin-top: 40px;
+  font-size: 120%;
+}
+input{
+  width:250px;
+  height:27px;
+}
+button{
+  height:30px;
 }
 .links{
   font-size: 200%;
@@ -30,6 +38,7 @@ ul {
 }
 a{
   text-decoration: none;
+  
 }
 a:hover{
   color:aquamarine;

@@ -42,7 +42,8 @@ a:hover{
 }
 li{
     margin-top: 35px;
-    text-shadow:1px 1px 2px rgb(255, 149, 92);
+    text-shadow:1px 1px 2px rgb(255, 168, 245);
+    font-size: 120%;
 }
 nav{
     font-size: 28px;
