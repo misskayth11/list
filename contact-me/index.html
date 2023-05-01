@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact me</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body class="container mt-5">
+    <nav>
+        <ul>
+            <li><a href="https://misskayth11.github.io/list/list">今まで好きだった人リスト</a></li>
+            <li><a href="https://misskayth11.github.io/list/new-list/">お互い知れたことのリスト</a></li>
+            <li><a href="https://misskayth11.github.io/list/selfmakinglist/">色んなリスト作る</a></li>
+            <li><a href="https://misskayth11.github.io/list/contact-me/">Contact Me</a></li>
+        </ul>
+    </nav>
+  <form onsubmit="sendContact(event)">
+    <div class="mb-3">
+      <label for="emailInput" class="form-label">Enter your email address</label>
+      <input type="email" class="form-control" id="emailInput">
+    </div>
+    <div class="mb-3">
+      <label for="messageInput" class="form-label">Enter your message</label>
+      <textarea class="form-control" id="messageInput" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <script>
+    async function sendContact(ev) {
+      ev.preventDefault();
+
+      const senderEmail = document
+        .getElementById('emailInput').value;
+      const senderMessage = document
+        .getElementById('messageInput').value;
+
+      const webhookBody = {
+        embeds: [{
+          title: 'Contact Form Submitted',
+          fields: [
+            { name: 'Sender', value: senderEmail },
+            { name: 'Message', value: senderMessage }
+          ]
+        }],
+      };
+
+      const webhookUrl = 'https://canary.discord.com/api/webhooks/1102497986677837874/GllmrrISvFL_GGHnku0ptJnh2fGN-H_oAJDn3YL54kd9JfgN8o1PinRE7X0dMng9oflW';
+
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(webhookBody),
+      });
+
+      if (response.ok) {
+        alert('I have received your message!');
+      } else {
+        alert('There was an error! Try again later!');
+      }
+    }
+  </script>
+</body>
+</html>
