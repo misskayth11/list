@@ -6,10 +6,18 @@ const input1=document.querySelector('#personname');
 const input2=document.querySelector('#fact');
 const name1=document.querySelector('#pname');
 const list=document.querySelector('#factlist');
+const uname=document.querySelector('#uname');
+const form3=document.querySelector('#yourname');
+const input3=document.querySelector('#namae');
 form1.addEventListener('submit',function(e){
 e.preventDefault();
 name1.innerText=input1.value;
 });
+
+form3.addEventListener('submit',function(e){
+    e.preventDefault();
+    uname.innerText=input3.value;
+})
 form2.addEventListener('submit',function(e){
     e.preventDefault();
     let factl=document.createElement('li');

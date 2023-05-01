@@ -52,3 +52,9 @@ a:hover{
   align-items: center;
   flex-direction: column;
 }
+#yourname{
+  margin-left: 70px;
+}
+#listcreater{
+  display: inline;
+}

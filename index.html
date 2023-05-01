@@ -24,7 +24,11 @@
     <div class="container">
     
     <h1>今まで好きだった人リスト</h1>
-    
+    <form action="/haha.html" id="yourname">
+      <label for="fillname"><b>あなたの名前教えてください</b></label>
+      <input type="text" id="namae" placeholder="あなたの名前">
+      <button>オッケー</button>
+    </form>
 
     <form action="/lists.html" id="listform">
       <label for="personlist"><b>好きな人の名前入力してください</b></label>
@@ -32,6 +36,7 @@
       <button id="btn1">オッケー</button>
     </form>
     <h2 class="header">好きな人リスト！！</h2>
+    <h3>リスト作った人-<p id="listcreater"></p></h3>
     <ol id="reallist1"></ol>
   </body>
   <footer>
