@@ -1,18 +1,49 @@
-body{
-    text-align: center;
-    font-size: 2rem;
-    background-image:url(https://pjsekai.sega.jp/assets/images/special/download/virtual-bg/virtual_bg_01_unit06.png)
+
+li {
+  font-size: 120%;
+  padding: 20px;
+  font-weight: 600;
 }
-li{
-    list-style: none;
-    margin-top: 30px;
+
+form {
+  margin-left: 30px;
+  margin-top: 40px;
+  font-size: 120%;
 }
-h1:hover,h2:hover{
-    color:palevioletred;
+input{
+  width:250px;
+  height:27px;
+}
+button{
+  height:30px;
+}
+.links{
+  font-size: 200%;
+}
+
+h1:hover{
+  color:chocolate;
+}
+.change {
+  text-align: center;
+}
+nav {
+  text-align: right;
+  
+}
+ul {
+  list-style: none;
+}
+#btt{
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+  
 }
 a:hover{
-    color:orangered;
-    text-decoration: underline;
+  color:aquamarine;
+  text-decoration: underline;
 }
 .container{
   display:flex;
@@ -20,4 +51,10 @@ a:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+#yourname{
+  margin-left: 70px;
+}
+#listcreater{
+  display: inline;
 }
