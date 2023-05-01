@@ -7,6 +7,13 @@ const btn2 =document.querySelector('#btn2');
 const form3=document.querySelector('#yourname');
 const username=document.querySelector('#listcreater');
 const input3=document.querySelector('#namae');
+
+form3.addEventListener('submit',function(e){
+    e.preventDefault();
+    username.innerText=input3.value;
+})
+
+
 form.addEventListener('submit',function(e){
     e.preventDefault();
     let newLi1=document.createElement('li');
@@ -29,7 +36,3 @@ const makeRandColor=()=>{
     const b=Math.floor(Math.random()*255);
     return `rgb(${r},${g},${b})`;
 };
-form3.addEventListener('submit',function(e){
-    e.preventDefault();
-    username.innerText=input3.value;
-})
