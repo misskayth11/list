@@ -14,4 +14,10 @@ a:hover{
     color:orangered;
     text-decoration: underline;
 }
-a{ text-decoration: none;}
+.container{
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

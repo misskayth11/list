@@ -6,6 +6,9 @@ const btn=document.querySelector('#btn1');
 const btn2=document.querySelector('#btn2')
 const list=document.querySelector('#odlist');
 const name=document.querySelector('#namel');
+const form3=document.querySelector('#yourname');
+const username=document.querySelector('#listcreater');
+const input3=document.querySelector('#namae');
 form.addEventListener('submit',function(e){
     e.preventDefault();
     name.innerText=input.value;
@@ -19,3 +22,7 @@ form2.addEventListener('submit',function(e){
 list.addEventListener('click',function(e){
     e.target.nodeName === 'LI' && e.target.remove();
 });
+form3.addEventListener('submit',function(e){
+    e.preventDefault();
+    username.innerText=input3.value;
+})

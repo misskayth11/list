@@ -4,6 +4,16 @@ const btn=document.querySelector('#btn1');
 const input1=document.querySelector('#person');
 const list=document.querySelector('#reallist1');
 const btn2 =document.querySelector('#btn2');
+const form3=document.querySelector('#yourname');
+const username=document.querySelector('#listcreater');
+const input3=document.querySelector('#namae');
+
+form3.addEventListener('submit',function(e){
+    e.preventDefault();
+    username.innerText=input3.value;
+})
+
+
 form.addEventListener('submit',function(e){
     e.preventDefault();
     let newLi1=document.createElement('li');
